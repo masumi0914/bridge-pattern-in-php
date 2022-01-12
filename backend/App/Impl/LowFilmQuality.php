@@ -4,7 +4,7 @@ namespace App\Impl;
 
 use App\Impl\Interfaces\MovieInterface;
 
-class HighFilmQuality implements MovieInterface {
+class LowFilmQuality implements MovieInterface {
 
   private $movie;
 
@@ -13,6 +13,6 @@ class HighFilmQuality implements MovieInterface {
   }
 
   public function display() {
-    echo 'display　'.$this->movie.' 720p';
+    echo 'display　'.$this->movie.' 240p';
   }
 }

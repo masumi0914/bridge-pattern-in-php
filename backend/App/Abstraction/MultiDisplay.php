@@ -2,16 +2,20 @@
 
 namespace App\Abstraction;
 
+use App\Abstraction\Display;
 use App\Impl\Interfaces\MovieInterface;
 
-class Display {
+class MultiDisplay extends Display {
   private $movieManeger;
 
   public function __construct(MovieInterface $movieManeger) {
     $this->movieManeger = $movieManeger;
   }
 
-  public function display() {
-    $this->movieManeger->display();
+  public function multiDisplay($number) {
+    for($i=0;$i<$number;$i++) {
+      $this->movieManeger->display();
+      echo "</br>";
+    }
   }
 }

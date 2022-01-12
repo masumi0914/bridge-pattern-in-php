@@ -2,6 +2,6 @@
 
 namespace App\Impl\Interfaces;
 
-Interface MovieDisplay {
+interface MovieInterface {
   public function display();
 }
